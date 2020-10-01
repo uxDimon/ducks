@@ -1,0 +1,53 @@
+:root {
+	// Размеры
+	--content-max-weight: 1240px;
+}
+
+// Цвета
+$color-light-black: #161615;
+$color-dark-gray: #4f4f4f;
+$color-gray: #e8e8e8;
+$color-white: #ffffff;
+$color-gold: #b0894e;
+$color-bronze: #926a31;
+
+// Шрифты
+$font-Manrope: "Manrope", sans-serif;
+$font-Spectral: "Spectral", serif;
+
+// Анимация
+@mixin transition($property: all) {
+	transition: 150ms ease-in-out 0ms;
+	transition-property: $property;
+}
+
+@import "./common/fonts.scss";
+
+* {
+	box-sizing: border-box;
+	outline-offset: 4px;
+}
+
+// https://github.com/WICG/focus-visible
+.js-focus-visible :focus:not(.focus-visible) {
+	outline: none;
+}
+
+body {
+	padding: 0;
+	margin: 0;
+}
+
+// @import "./pages/calculator.scss";
+
+// @media screen and (max-width: 1344px) {
+
+// }
+
+// @media screen and (max-width: 960px) {
+
+// }
+
+// @media screen and (max-width: 768px) {
+
+// }
