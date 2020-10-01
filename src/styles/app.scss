@@ -4,16 +4,12 @@
 }
 
 // Цвета
-$color-light-black: #161615;
-$color-dark-gray: #4f4f4f;
-$color-gray: #e8e8e8;
+$color-black: #000000;
 $color-white: #ffffff;
-$color-gold: #b0894e;
-$color-bronze: #926a31;
+$color-green: #4fbd74;
 
 // Шрифты
-$font-Manrope: "Manrope", sans-serif;
-$font-Spectral: "Spectral", serif;
+$font-Gilroy: "Gilroy", sans-serif;
 
 // Анимация
 @mixin transition($property: all) {
@@ -26,6 +22,7 @@ $font-Spectral: "Spectral", serif;
 * {
 	box-sizing: border-box;
 	outline-offset: 4px;
+	color: white;
 }
 
 // https://github.com/WICG/focus-visible
@@ -36,6 +33,62 @@ $font-Spectral: "Spectral", serif;
 body {
 	padding: 0;
 	margin: 0;
+	font-family: $font-Gilroy;
+}
+
+.main,
+.footer {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.footer {
+	background-color: $color-green;
+}
+
+.content-w {
+	width: 100%;
+	max-width: 1288px;
+}
+
+.main-menu {
+	padding: 28px 0;
+	position: relative;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.logo {
+	position: absolute;
+	left: 0;
+	display: block;
+}
+
+.main-menu__menu-list {
+	list-style: none;
+	padding: 0;
+	margin: 0;
+	display: grid;
+	grid-gap: 44px;
+	grid-auto-flow: column;
+}
+
+.main-menu__menu-linc {
+	color: $color-white;
+	font-weight: 600;
+	font-size: 20px;
+	line-height: 24px;
+	text-decoration: none;
+}
+
+.main-menu__menu-linc_active {
+	color: $color-black;
+}
+
+.main-menu__menu-linc:hover {
+	text-decoration: underline;
 }
 
 // @import "./pages/calculator.scss";
