@@ -2,9 +2,13 @@ extends ../template
 
 block variables
     - var title = 'Главная'
-    - var active = 'index'
 
 block content
-    main.main
-        .content-w
-            img(src="./assets/images/back.jpg", alt="")
+    main
+        .content-w.main
+            img(src="./assets/images/back.png", alt="Бретонский Эпаньоль").main__img
+            
+            .main__text-wrap
+                .main__text
+                    p <span class="main__text-bold">17.08.20</span> у двух чемпионов <span class="main__text-bold">Чесси Ида Галы</span> и <span class="main__text-bold">Ган Дель Истоминова</span> родились 7 оранжево-белых щенков породы <br><span class="main__text-bold">Бретонский Эпаньоль</span>
+                    button.button Подробнее

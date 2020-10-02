@@ -1,0 +1,18 @@
+extends ../template
+
+block variables
+    - var title = 'Щенки'
+
+block content
+    main.color_w
+        .contacts
+            .contacts__text-wrap
+                h1.ducks__h1.contacts__text-h Контакты
+                span.contacts__text-name Алена Храпкова
+                a(href="tel:+79110076164").contacts__text-licn +7 911 007 61 64
+                a(href="mailto:infoinfo@infoinfo.ru").contacts__text-licn infoinfo@infoinfo.ru
+                button.button.contacts__text-button Форма обратной связи
+            .contacts__img
+                img(src="./assets/images/contacts.jpg", alt="Бретонский Эпаньоль")
+
+

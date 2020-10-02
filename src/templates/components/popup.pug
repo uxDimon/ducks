@@ -1,0 +1,15 @@
+.popup__wrap
+    .popup
+        button(data-close-popup).popup__close
+        form.popup__content
+            h3.popup__h Оставить заявку
+            label.input.popup__input
+                span.input__required Ваше имя
+                input(type="text", name="" placeholder="Имя" required)
+            label.input.popup__input
+                span.input__required Номер телефона
+                input(type="tel", name="" placeholder="Tелефона" required)
+            button(type="submit").button.popup__button Забронировать
+            p.popup__text Нажимая на кнопку, вы даёте согласие на обработку персональных данных
+    div(data-close-popup).popup__close-area
+
