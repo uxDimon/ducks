@@ -131,17 +131,22 @@ main,
 }
 
 .main-menu {
-	padding: 28px 0;
+	padding: 16px 0;
 	position: relative;
 	display: flex;
-	justify-content: center;
+	justify-content: space-between;
 	align-items: center;
 }
 
 .logo {
-	position: absolute;
-	left: 0;
 	display: block;
+}
+
+.main-menu__tel {
+	color: $color-white;
+	font-weight: 600;
+	font-size: 20px;
+	line-height: 1.2;
 }
 
 .main-menu__menu-list {
@@ -535,10 +540,6 @@ main,
 		padding-right: 20px;
 	}
 
-	.logo {
-		left: 20px;
-	}
-
 	.main__text {
 		padding-left: 20px;
 	}
@@ -558,6 +559,10 @@ main,
 	.contacts {
 		padding-left: 20px;
 	}
+
+	.main__img {
+		width: 100vw;
+	}
 }
 
 @media screen and (max-width: 960px) {
@@ -573,10 +578,14 @@ main,
 	}
 
 	.main-menu__menu-list {
-		grid-gap: 10px;
+		grid-gap: 16px;
 	}
 
 	.main-menu__menu-linc {
+		font-size: 16px;
+	}
+
+	.main-menu__tel {
 		font-size: 16px;
 	}
 
@@ -587,9 +596,12 @@ main,
 	.main__text {
 		position: relative;
 		max-width: 100%;
+		padding-right: 0;
+		padding-left: 0;
 
 		&::after {
 			background-color: $color-white;
+			right: -20px;
 		}
 	}
 
@@ -642,13 +654,29 @@ main,
 		margin: 30px 0 60px 0;
 		padding: 0 20px;
 	}
+
+	.parents__item-name {
+		font-size: 28px;
+	}
+
+	.parents__item-p-1 {
+		font-size: 18px;
+	}
+}
+
+@media screen and (max-width: 540px) {
+	.main-menu {
+		padding-top: 10px;
+		padding-bottom: 10px;
+		flex-direction: column;
+	}
+
+	.main-menu__menu-wrap {
+		margin-bottom: 12px;
+	}
 }
 
 @media screen and (max-width: 440px) {
-	.logo {
-		display: none;
-	}
-
 	.ducks__item {
 		flex-direction: column-reverse;
 		padding: 0;
