@@ -31,3 +31,29 @@ popupOpen(popup_close, false);
 // 		item.setCustomValidity("");
 // 	});
 // });
+
+// Слайдер https://www.npmjs.com/package/tiny-slider
+if (document.querySelector(".slider1")) {
+	var parents1 = tns({
+		container: ".slider1",
+		items: 1,
+		// gutter: 20,
+		mouseDrag: true,
+		speed: 400,
+		nav: false,
+		controlsPosition: "bottom",
+		controlsText: ["←", "→"],
+	});
+}
+if (document.querySelector(".slider2")) {
+	var parents2 = tns({
+		container: ".slider2",
+		items: 1,
+		// gutter: 20,
+		mouseDrag: true,
+		speed: 400,
+		nav: false,
+		controlsPosition: "bottom",
+		controlsText: ["←", "→"],
+	});
+}
